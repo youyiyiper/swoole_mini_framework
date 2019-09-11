@@ -1,0 +1,21 @@
+6863-1-root
+6864-6863-root
+6871-6864-root|6872-6864-root|6869-6864-root|6870-6864-root
+6875-6864-root|6874-6864-root|6873-6864-root
+
+
+       
+
+  Master         swoole_server_master         6863             1              root      
+  Manager        swoole_server_manager        6864            6863            root 
+
+  Worker         swoole_server_worker         6873            6864            root
+  Worker         swoole_server_worker         6875            6864            root      
+  Worker         swoole_server_worker         6874            6864            root 
+  
+   Task          swoole_server_task           6869            6864            root        
+   Task          swoole_server_task           6870            6864            root 
+   Task          swoole_server_task           6871            6864            root        
+   Task          swoole_server_task           6872            6864            root        
+       
+      
